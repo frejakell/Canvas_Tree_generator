@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<title>Trees</title>
+<style>
+  
+  canvas{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:white;
+  }
+ *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+ 
+ 
+ 
+ }
+
+
+ #generator, #My_random_generator, #My_forest_generator, #My_Random_forest_generator {
+  cursor:pointer;
+  outline:none;
+  border:none;
+  position:absolute;
+  bottom:5%;
+  z-index:10;
+  transform: translate(-50%,0);
+  padding: 20px 30px;
+  border-radius: 50px;
+ }
+
+
+#generator{
+  left:20%;
+ }
+
+
+
+ #My_random_generator{
+
+  left: 40%
+ }
+
+ #My_forest_generator{
+  left:60%;
+ }
+
+ #My_Random_forest_generator{
+  left:80%;
+ }
+</style>
+</head>
+<body>
+<canvas></canvas>
+
+<button id="generator">Generate My Tree</button>
+<button id="My_random_generator">Generate Random Tree</button>
+<button id="My_forest_generator">Generate My Forest</button>
+<button id="My_Random_forest_generator">Generate Random Forest</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+<script src="tunnel_script.js"></script>
+
+</body>
+</html>
